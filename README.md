@@ -8,11 +8,42 @@
 
 ---
 
+## Project Summary
+
+This project develops machine learning models to predict mortality risk in patients with heart failure using clinical and laboratory variables.
+
+**Key Results**
+
+* Random Forest achieved **ROC-AUC ≈ 0.90**
+* Logistic Regression baseline achieved **ROC-AUC ≈ 0.80**
+* The most important predictors were **ejection fraction**, **serum creatinine**, **age**, and **follow-up time**
+* Model predictions were interpreted using **SHAP explainability**
+
+The results highlight the role of **cardiac function and kidney function** in predicting mortality among heart failure patients.
+
+---
+
+### Feature Importance
+
+![Feature Importance](reports/figures/feature_importance.png)
+
+The Random Forest model identifies the most influential clinical predictors of mortality.
+Cardiac function (ejection fraction) and kidney function (serum creatinine) are the strongest predictors.
+---
 ## Project Overview
 
 This project develops machine learning models to predict mortality risk in patients with heart failure using clinical and laboratory variables.
 
 The analysis includes exploratory data analysis, predictive modeling, cross-validation, and explainable AI techniques to identify key clinical risk factors.
+
+---
+## Research Question
+
+Can machine learning models accurately predict mortality risk among patients with heart failure using routinely collected clinical variables?
+
+Understanding the most influential predictors of mortality may help identify high-risk patients earlier and support clinical decision making.
+
+---
 
 ## Dataset
 
@@ -101,9 +132,6 @@ Finally, feature importance analysis is performed to identify the most influenti
 
 The Random Forest model outperforms the logistic regression baseline.
 
-### Feature Importance
-
-![Feature Importance](reports/figures/feature_importance.png)
 
 ### Model Explainability (SHAP)
 
@@ -124,6 +152,14 @@ Key predictors identified by the model include:
 - **Follow-up time**
 
 These predictors align with known clinical mechanisms affecting heart failure prognosis.
+
+---
+## Key Takeaways
+
+- Random Forest significantly outperforms the logistic regression baseline.
+- Cardiac function (ejection fraction) is the strongest predictor of mortality.
+- Kidney function (serum creatinine) also plays a critical role in survival outcomes.
+- Explainable AI methods such as SHAP help interpret model predictions at both global and patient levels.
 
 ---
 
