@@ -137,7 +137,7 @@ Overall, the machine learning model captures clinically meaningful relationships
 ## Project Architecture
 
 The repository is organized to separate data, modeling code, and experiment outputs.
-
+```
 DSML_DEMO_PROJECT
 │
 ├── data
@@ -165,6 +165,7 @@ DSML_DEMO_PROJECT
 │
 ├── README.md
 └── requirements.txt
+```
 
 ### Directory description
 
