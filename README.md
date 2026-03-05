@@ -1,5 +1,13 @@
+
 # Heart Failure Mortality Prediction using Machine Learning
+
+![Python](https://img.shields.io/badge/python-3.12-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
+![SHAP](https://img.shields.io/badge/explainability-SHAP-red)
+![Status](https://img.shields.io/badge/status-research--project-green)
+
 ---
+
 ## Project Overview
 
 This project develops machine learning models to predict mortality risk in patients with heart failure using clinical and laboratory variables.
