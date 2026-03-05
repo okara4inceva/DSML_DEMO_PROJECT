@@ -1,0 +1,35 @@
+{
+  "dataset": {
+    "n_rows": 299,
+    "n_features": 12,
+    "death_rate": 0.3210702341137124,
+    "train_shape": [
+      239,
+      12
+    ],
+    "test_shape": [
+      60,
+      12
+    ],
+    "train_death_rate": 0.32217573221757323,
+    "test_death_rate": 0.31666666666666665
+  },
+  "logistic_regression_test": {
+    "roc_auc": 0.8549422336328627,
+    "pr_auc": 0.7414801186878519
+  },
+  "random_forest_test": {
+    "roc_auc": 0.8979460847240052,
+    "pr_auc": 0.801373447010566
+  },
+  "random_forest_cv_5fold": {
+    "roc_auc_mean": 0.9044717586649551,
+    "roc_auc_std": 0.024857227557831922,
+    "pr_auc_mean": 0.8177087092436558,
+    "pr_auc_std": 0.050663484385641666
+  },
+  "artifacts": {
+    "model_path": "models/rf.joblib",
+    "feature_importance_png": "reports/figures/feature_importance.png"
+  }
+}
