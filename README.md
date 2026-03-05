@@ -141,28 +141,27 @@ The repository is organized to separate data, modeling code, and experiment outp
 DSML_DEMO_PROJECT
 │
 ├── data
-│ └── heart_failure_clinical_records_dataset.csv
+│   └── heart_failure_clinical_records_dataset.csv
 │
 ├── notebooks
-│ ├── 01_eda.ipynb
-│ ├── 02_modeling.ipynb
-│ └── 03_explainability.ipynb
+│   ├── 01_eda.ipynb
+│   ├── 02_modeling.ipynb
+│   └── 03_explainability.ipynb
 │
 ├── src
-│ ├── train.py
-│ └── explain.py
+│   ├── train.py
+│   └── explain.py
 │
 ├── models
-│ └── rf.joblib
+│   └── rf.joblib
 │
 ├── reports
-│ ├── metrics.json
-│ ├── model_comparison.csv
-│ └── figures
-│ ├── feature_importance.png
-│ ├── shap_summary.png
-│ ├── shap_bar.png
-│ └── shap_waterfall_patient0.png
+│   ├── metrics.json
+│   └── figures
+│       ├── feature_importance.png
+│       ├── shap_summary.png
+│       ├── shap_bar.png
+│       └── shap_waterfall_patient0.png
 │
 ├── README.md
 └── requirements.txt
