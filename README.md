@@ -93,28 +93,15 @@ The modeling stage follows a structured machine learning workflow:
 
 Data → Modeling → Evaluation → Interpretation
 
-```
-Dataset
-   ↓
-Train / Test Split (Stratified)
-   ↓
-Baseline Model
-(Logistic Regression)
-   ↓
-Advanced Model
-(Random Forest)
-   ↓
-Model Evaluation
-(ROC-AUC, PR-AUC)
-   ↓
-Cross-Validation
-(5-fold Stratified CV)
-   ↓
-Feature Importance Analysis
-   ↓
-Model Explainability
-(SHAP)
-
+```mermaid
+flowchart TD
+    A[Dataset] --> B[Train / Test Split<br>Stratified]
+    B --> C[Baseline Model<br>Logistic Regression]
+    C --> D[Advanced Model<br>Random Forest]
+    D --> E[Model Evaluation<br>ROC-AUC / PR-AUC]
+    E --> F[Cross Validation<br>5-fold Stratified CV]
+    F --> G[Feature Importance Analysis]
+    G --> H[Model Explainability<br>SHAP]
 ```
 First, a Logistic Regression model is trained as a baseline to establish a reference level of performance.  
 Next, a Random Forest classifier is trained to capture nonlinear relationships between clinical variables.
