@@ -67,6 +67,10 @@ Key clinical features include:
 - smoking
 - high_blood_pressure
 - time (follow-up duration)
+
+### Dataset source:
+https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data
+
 ---
 
 # Model Training
