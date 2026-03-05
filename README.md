@@ -48,6 +48,7 @@ Understanding the most influential predictors of mortality may help identify hig
 ## Dataset
 
 The dataset contains clinical records of 299 patients with heart failure.
+Heart failure is a major complication of cardiovascular disease and early identification of high-risk patients may support clinical decision-making and patient monitoring.
 
 Target variable:
 
