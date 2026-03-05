@@ -92,28 +92,37 @@ The project trains two models:
 The modeling stage follows a structured machine learning workflow:
 
 Data → Modeling → Evaluation → Interpretation
-
+```
 Dataset
-  ↓
-Train / Test Split (Stratified)
-  ↓
+│
+▼
+Train / Test Split
+(Stratified)
+│
+▼
 Baseline Model
 Logistic Regression
-  ↓
+│
+▼
 Advanced Model
 Random Forest
-  ↓
-Model Comparison
+│
+▼
+Model Evaluation
 ROC-AUC / PR-AUC
-  ↓
+│
+▼
 Cross-Validation
 5-fold Stratified CV
-  ↓
-Feature Importance Analysis
-  ↓
-Explainability
+│
+▼
+Feature Importance
+(Random Forest)
+│
+▼
+Model Explainability
 SHAP Analysis
-
+```
 First, a Logistic Regression model is trained as a baseline to establish a reference level of performance.  
 Next, a Random Forest classifier is trained to capture nonlinear relationships between clinical variables.
 Model performance is compared using ROC-AUC and PR-AUC metrics.  
