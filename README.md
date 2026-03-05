@@ -92,6 +92,7 @@ The project trains two models:
 The modeling stage follows a structured machine learning workflow:
 
 Data → Modeling → Evaluation → Interpretation
+
 ```
 Dataset
    ↓
@@ -113,6 +114,7 @@ Feature Importance Analysis
    ↓
 Model Explainability
 (SHAP)
+
 ```
 First, a Logistic Regression model is trained as a baseline to establish a reference level of performance.  
 Next, a Random Forest classifier is trained to capture nonlinear relationships between clinical variables.
