@@ -100,13 +100,16 @@ Data → Modeling → Evaluation → Interpretation
 
 ```mermaid
 flowchart TD
-    A[Dataset] --> B[Train / Test Split<br>Stratified]
-    B --> C[Baseline Model<br>Logistic Regression]
-    C --> D[Advanced Model<br>Random Forest]
-    D --> E[Model Evaluation<br>ROC-AUC / PR-AUC]
-    E --> F[Cross Validation<br>5-fold Stratified CV]
-    F --> G[Feature Importance Analysis]
-    G --> H[Model Explainability<br>SHAP]
+    A[Dataset] --> B[Data Cleaning<br>Handle missing values / outliers]
+    B --> C[Feature Engineering<br>Encoding / Scaling]
+    C --> D[Train / Test Split<br>Stratified]
+    D --> E[Baseline Model<br>Logistic Regression]
+    E --> F[Advanced Model<br>Random Forest]
+    F --> G[Model Evaluation<br>ROC-AUC / PR-AUC]
+    G --> H[Cross Validation<br>5-fold Stratified CV]
+    H --> I[Feature Importance Analysis]
+    I --> J[Model Explainability<br>SHAP]
+    J --> K[Deployment<br>Prediction API / Dashboard]
 ```
 First, a Logistic Regression model is trained as a baseline to establish a reference level of performance.  
 Next, a Random Forest classifier is trained to capture nonlinear relationships between clinical variables.
